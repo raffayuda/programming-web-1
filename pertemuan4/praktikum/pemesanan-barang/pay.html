@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+
+    <header style="display: flex; justify-content: center; width: 100%; margin-bottom: 20px;">
+        <nav style="width: 100%; max-width: 1000px; border: 2px solid black; padding: 20px; box-sizing: border-box;">
+            <ul style="display: flex; justify-content: space-around; list-style: none; padding: 0; margin: 0;">
+                <li>Home</li>
+                <li>Register</li>
+                <li>Policy</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="display: flex; flex-wrap: wrap; gap: 50px; margin-top: 20px; justify-content: center; box-sizing: border-box;">
+        
+        <div class="image-section" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 300px; border: 1px solid #ccc; padding: 10px; border-radius: 10px; box-sizing: border-box; height: fit-content;">
+            <img src="https://placeholder.co/300" width="300px" height="auto" alt="Image Placeholder" style="width: 100%; height: auto; object-fit: cover;">
+            <button style="margin-top: 20px; width: 150px;">Upload Picture</button>
+        </div>
+
+        <div class="form-section" style="display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 800px; border: 1px solid #ccc; padding: 30px; border-radius: 10px; box-sizing: border-box;">
+            
+            <div>
+                <label for="title">Title Here:</label>
+                <span>MacBook Air €800</span>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <div>
+                    <label for="description">Description:</label>
+                </div>
+                <div>
+                    <span>Year: 2009</span><br>
+                    <span>Model:</span><br>
+                    <span>Condition: Mint</span>
+                </div>
+            </div>
+            
+            <div>
+                <label for="account-number">Total Amount:</label>
+                <span>€800</span>
+            </div>
+            
+            <div>
+                <label for="account-number">Pay to:</label>
+                <span>123-456-789-0</span>
+            </div>
+
+            <div>
+                <label for="bank">Payment Type:</label><br>
+                <select id="bank" style="width: 100%; padding: 5px;">
+                    <option value="BRI">Visa Debit</option>
+                    <option value="BTN">COD</option>
+                    <option value="BCA">Cash bond</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="account-holder">Account Holder:</label><br>
+                <input type="text" id="account-holder" placeholder="Name Here" value="Raffa Yuda Pratama" disabled style="width: 100%; padding: 5px;">
+            </div>
+            
+            <fieldset style="border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
+                <legend>Account No</legend>
+                <div>
+                    <input type="number" id="transaction" min="1" style="padding: 5px; width: 100%;" placeholder="123-456-789-0" value="123-456-789-0" disabled>
+                    <p style="font-size: 12px; color: gray;">* If the transaction is for 3 people, enter 3</p>
+                </div>
+                <div>
+                    <input checked type="checkbox" id="mobile-phone" style="margin-right: 10px;">
+                    <label for="mobile-phone">Send to Mobile Phone</label><br>
+
+                    <input checked type="checkbox" id="email" style="margin-right: 10px;">
+                    <label for="email">Send to Email</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="phone">Send to Mobile Phone:</label><br>
+                <input type="tel" id="phone" style="width: 100%; padding: 5px;" placeholder="+628123456789" disabled value="+628123456789">
+            </div>
+
+            <div>
+                <label for="email-address">Send to Email:</label><br>
+                <input type="email" id="email-address" style="width: 100%; padding: 5px;" placeholder="fya_06@yahoo.com" value="fya_06@yahoo.com" disabled>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+                    Pay using QuidLink
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
