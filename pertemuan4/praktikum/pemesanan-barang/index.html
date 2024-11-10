@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+
+    <header style="display: flex; justify-content: center; width: 100%; box-sizing: border-box;">
+        <nav style="width: 100%; max-width: 1000px; border: 2px solid black; padding: 20px; box-sizing: border-box;">
+            <ul style="display: flex; justify-content: space-around; list-style: none; padding: 0; margin: 0;">
+                <li>Home</li>
+                <li>Generate Link</li>
+                <li>Transaction</li>
+                <li>Policy</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="display: flex; gap: 50px; margin-top: 20px; justify-content: center; flex-direction: row; box-sizing: border-box;">
+        
+        <div class="image-section" style="display: flex; border: 1px solid #ccc; padding: 10px; height: fit-content; flex-direction: column; align-items: center; width: 100%; max-width: 400px; box-sizing: border-box;">
+            <img src="https://placeholder.co/300" alt="Image Placeholder" style="width: 100%; height: auto; object-fit: cover;">
+            <button style="margin-top: 20px; width: 150px;">Upload Picture</button>
+        </div>
+        
+        <div class="form-section" style="display: flex; border: 1px solid #ccc; padding: 30px; flex-direction: column; gap: 20px; width: 100%; max-width: 800px; box-sizing: border-box;">
+            
+            <form action="pay.html" style="display: flex; flex-direction: column; gap: 20px; box-sizing: border-box;">
+                <div>
+                    <label for="title">Title Here:</label><br>
+                    <input type="text" id="title" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                </div>
+                
+                <div>
+                    <label for="description">Description:</label><br>
+                    <textarea id="description" style="width: 100%; padding: 5px; box-sizing: border-box;" rows="5"></textarea>
+                </div>
+                
+                <div>
+                    <label for="account-number">Account Number:</label><br>
+                    <input type="text" id="account-number" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                </div>
+                
+                <div>
+                    <label for="bank">Bank:</label><br>
+                    <select id="bank" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                        <option value="BRI">BRI</option>
+                        <option value="BTN">BTN</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="account-holder">Account Holder:</label><br>
+                    <input type="text" id="account-holder" placeholder="Name Here" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                </div>
+                
+                <fieldset style="border: 1px solid #ccc; padding: 10px; box-sizing: border-box;">
+                    <legend>Transaction</legend>
+                    <div>
+                        <input type="number" id="transaction" min="1" style="padding: 5px; width: 100%; box-sizing: border-box;" placeholder="Enter number of people">
+                        <p style="font-size: 12px; color: gray;">* If the transaction is for 3 people, enter 3</p>
+                    </div>
+                    <div>
+                        <input checked type="checkbox" id="mobile-phone" style="margin-right: 10px;">
+                        <label for="mobile-phone">Send to Mobile Phone</label><br>
+
+                        <input checked type="checkbox" id="email" style="margin-right: 10px;">
+                        <label for="email">Send to Email</label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="phone">Send to Mobile Phone:</label><br>
+                    <input type="tel" id="phone" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                </div>
+
+                <div>
+                    <label for="email-address">Send to Email:</label><br>
+                    <input type="email" id="email-address" style="width: 100%; padding: 5px; box-sizing: border-box;">
+                </div>
+
+                <div style="text-align: right;">
+                    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+                        Generate Nabr Link
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

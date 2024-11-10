@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+</head>
+
+<body style="font-family: sans-serif; display: flex;justify-content: center;align-items: center;">
+    <div style="width: 80%; border: 2px solid black; box-shadow: 2px 0px 12px 0px rgba(107,220,237,0.75);padding: 20px;">
+        <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+        <p>Our 12" wood-fired pizzas are available for delivery or pickup. Build your custom pizza and we'll deliver it within an hour.</p>
+        <form action="order.html" method="GET">
+            <p>Your Information</p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 5px;"><br><br>
+
+            <label for="addres">Addres:</label><br>
+            <input type="text" id="addres" name="addres" required style="width: 100%; padding: 5px;"><br><br>
+
+            <label for="telephone">Telephone Number:</label><br>
+            <input type="tel" id="telephone" name="telephone" required style="width: 100%; padding: 5px;"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 5px;"><br><br>
+
+            <label for="message">Delivery instructions:</label><br>
+            <textarea style="width: 100%; padding: 5px;" id="message" rows="5" name="message" maxlength="400" placeholder="No more than 400 characters" required></textarea><br><br>
+
+            <span>Design Your Dream Pizza</span><br>
+            <span>Pizza Specs</span><br><br>
+            <div>
+                <span>Crust (Choose one):</span><br>
+                (<input type="radio" id="cs" name="crust" value="Classic white">)
+                <label for="cs">Classic white</label><br>
+                (<input type="radio" id="mult" name="crust" value="Multigrain">)
+                <label for="mult">Multigrain</label><br>
+                (<input type="radio" id="csc" name="crust" value="Cheese-stuffed crust">)
+                <label for="csc">Cheese-stuffed crust</label><br>
+                (<input selected type="radio" id="gf" name="crust" value="Gluten-free">)
+                <label for="gf">Gluten-free</label>
+            </div>
+            <br><br>
+            <div>
+                <span>Toppings (Choose as many as you want):</span><br>
+                (<input select checked="checked" type="checkbox" id="rs" name="toppings[]" value="Red Sauce">)
+                <label for="rs">Red Sauce</label><br>
+                (<input type="checkbox" id="ws" name="toppings[]" value="White Sauce">)
+                <label for="ws">White Sauce</label><br>
+                (<input type="checkbox" id="mc" name="toppings[]" value="Mozzarella Cheese">)
+                <label for="mc">Mozzarella Cheese</label><br>
+                (<input type="checkbox" id="pep" name="toppings[]" value="Pepperoni">)
+                <label for="pep">Pepperoni</label><br>
+                (<input type="checkbox" id="Mush" name="toppings[]" value="Mushrooms">)
+                <label for="Mush">Mushrooms</label><br>
+                (<input type="checkbox" id="Peppers" name="toppings[]" value="Peppers">)
+                <label for="">Peppers</label><br>
+                (<input type="checkbox" id="ancho" name="toppings[]" value="Anchovies">)
+                <label for="ancho">Anchovies</label>
+            </div>
+            <br><br>
+            <div>
+                <span>Number</span><br>
+                <span>How many pizzas: <input type="number" size="3" min="1" max="6" value="1" name="quantity"></span>
+            </div>
+            <br><br>
+            <div>
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Bring me a Pizza</button> <button type="reset" style="padding: 10px 20px; background-color: #f44336; color: white; border: none; cursor: pointer;">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

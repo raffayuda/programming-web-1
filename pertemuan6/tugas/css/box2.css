@@ -1,0 +1,50 @@
+.flex{
+    display: flex;
+    gap: 10px;
+}
+.flex .yellow{
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: yellow;
+    height: 100px;
+    width: 20%;
+}
+.flex .orange{
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: orange;
+    height: 100px;
+    width: 80%;
+}
+
+.flex2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.flex2 .green{
+    width: 20%;
+    border: 1px solid black;
+    height: 400px;
+    background-color: turquoise;
+}
+.flex2 .gray{
+    width: 60%;
+    border: 1px solid black;
+    height: 400px;
+    background-color: gray;
+}
+.flex2 .skyblue{
+    width: 20%;
+    border: 1px solid black;
+    height: 400px;
+    background-color: skyblue;
+}
+
+.blue{
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 100px;
+    background-color: blue;
+}

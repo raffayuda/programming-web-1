@@ -1,0 +1,107 @@
+
+#header {
+    background-color: #d4f1f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #004e64;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#header blockquote {
+    text-align: justify;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px dashed #004e64;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f0f9ff;
+}
+
+
+.list {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    color: #007791;
+}
+
+.list ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Style untuk elemen gambar */
+.gambar {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f9ff;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gambar img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.gambar img:hover {
+    transform: scale(1.1);
+}
+
+
+.isi {
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #f7fcfd;
+    color: #004e64;
+    font-family: 'Georgia', serif;
+    border: 1px solid #004e64;
+}
+
+.isi::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007791;
+}
+
+#profil, #beternak, .promo {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #e8f9fc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+    color: #005f73;
+    border: 1px solid #005f73;
+}
+
+.koleksi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.koleksi img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.koleksi img:hover {
+    transform: scale(1.1);
+}
