@@ -3,14 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+body{
+    height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.container{
     margin: 20px;
-    width: 90%;
-    height: 100vh;
+    border: 2px solid black;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px black;
 }
 .img1{
     display: flex;
