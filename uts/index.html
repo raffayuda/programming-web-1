@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Custom styles for this template -->
@@ -172,7 +173,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span data-bs-toggle="modal" data-bs-target="#sepatu1" class="border-0" style="cursor: pointer;" >
               <div class="img-box">
                 <img src="images/sepatu1.png" alt="">
               </div>
@@ -192,12 +193,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span data-bs-toggle="modal" data-bs-target="#sepatu2" class="border-0" style="cursor: pointer;">
               <div class="img-box">
                 <img src="images/sepatu2.png" alt="">
               </div>
@@ -206,7 +207,7 @@
                   Decathlon
                 </h6>
                 <h6>
-                  Hrga
+                  Harga
                   <span>
                     IDR 200.000
                   </span>
@@ -217,12 +218,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu3" class="border-0" >
               <div class="img-box">
                 <img src="images/sepatu3.png" alt="">
               </div>
@@ -242,18 +243,18 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu4" class="border-0" >
               <div class="img-box">
-                <img src="images/sepatu4.png" alt="">
+                <img src="images/sepatu9.png" alt="">
               </div>
               <div class="detail-box">
                 <h6>
-                  Nike
+                  Adidas
                 </h6>
                 <h6>
                   Harga
@@ -267,12 +268,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu5" class="border-0" >
               <div class="img-box">
                 <img src="images/sepatu5.png" alt="">
               </div>
@@ -292,12 +293,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu6" class="border-0" >
               <div class="img-box">
                 <img src="images/sepatu6.png" alt="" >
               </div>
@@ -317,12 +318,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu7" class="border-0" >
               <div class="img-box">
                 <img src="images/sepatu7.png" alt="">
               </div>
@@ -342,12 +343,12 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
-            <a href="">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sepatu8" class="border-0" >
               <div class="img-box">
                 <img src="images/sepatu8.png" alt="">
               </div>
@@ -367,10 +368,11 @@
                   New
                 </span>
               </div>
-            </a>
+            </span>
           </div>
         </div>
       </div>
+      <div id="modal-container"></div>
       <div class="btn-box">
         <a href="#contact">
           Kontak Kami
@@ -525,7 +527,7 @@
 
   <!-- contact section -->
 
-  <section class="contact_section " id="contact">
+  <section class="contact_section " id="contact" data-aos="zoom-in" data-aos-duration="2000">
     <div class="container px-0">
       <div class="heading_container ">
         <h2 class="">
@@ -533,7 +535,7 @@
         </h2>
       </div>
     </div>
-    <div class="container container-bg" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="container container-bg">
       <div class="row">
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
@@ -570,7 +572,7 @@
   <!-- end contact section -->
 
   <!-- client section -->
-  <section class="client_section layout_padding" id="author">
+  <section class="client_section layout_padding" id="author" data-aos="zoom-in" data-aos-duration="2000">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -585,8 +587,8 @@
             <div class="box">
               <div class="client_info">
                 <div class="row">
-                  <div class="col-">
-                    <img src="images/logo.png" alt="">
+                  <div class="col-3">
+                    <img src="images/author.jpg" alt="" width="200" class="rounded">
                   </div>
                   <div class="col">
                     <div class="client_name">
@@ -641,12 +643,18 @@
     <!-- footer section -->
 
   </section>
+ 
+  
+  
+
+  
 
   <!-- end info section -->
 
-
+  <script src="modal.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script src="js/custom.js"></script>
@@ -654,6 +662,324 @@
   <script>
     AOS.init();
   </script>
+
+
+
+
+
+  <div class="modal fade" id="sepatu1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Nike Air Max 1</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu1.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Temukan Nike Air Max 1 Ultra Essential 'White Anthracite': interpretasi ulang dari model yang sangat populer di kalangan kolektor.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 300.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Decathlon Kalenji</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu2.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Nyaman dan ringan, sepatu ini dirancang untuk berlari hingga 20 km (12 mil) per minggu.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 200.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Zevil RTX 2000</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu3.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Sepatu Sneakers Pria Big Sport Sepatu Hang Out Panarybody 2023 Sepatu Cowok Kekinian Sepatu Import Berkualitas
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 200.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Adidas Grand Court</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu9.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Sepatu Adidas Grand Court K sangat cocok untuk anak-anak yang suka memadukan penampilan olahraga dengan tren fesyen.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 300.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Ortuseight Catalyst</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu5.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Sepatu Sepakbola yang memiliki warna keren serta pull yang unik Upper : Sintetis Teknologi : QuickFit , OrtTrex , OrtSpine , OrtShox 100% Original Made In Indonesia
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 300.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Mizuno Wave</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu6.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Sepatu kets Mizuno Wave Creation 20 diluncurkan pada tahun 2019, dan dikembangkan
+              untuk memberikan keseimbangan, yang membantu menghemat energi atlet.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 350.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Nike Air Max 270</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu7.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Desainnya terinspirasi dari ikon Air Max, menampilkan inovasi terbesar Nike dengan jendela besar dan rangkaian warna segar.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 400.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sepatu8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">RDS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Nike Air Toren</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 text-center mx-auto">
+              <img src="images/sepatu8.png" alt="" width="200">
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              Bagian atas yang dapat bernapas dilengkapi dengan lengan bagian dalam yang elastis untuk memberikan kenyamanan dan fleksibilitas. Dilengkapi dengan midsole busa
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>Harga : IDR 350.000</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
