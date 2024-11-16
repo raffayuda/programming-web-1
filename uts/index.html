@@ -17,6 +17,8 @@
     RDS
   </title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -29,6 +31,7 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -36,16 +39,12 @@
     <!-- header section strats -->
     <header class="header_section">
       <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            RDS
-          </span>
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <h1 class="mr-5">logo</h1>
           <ul class="navbar-nav  ">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -73,14 +72,15 @@
             </li>
           </ul>
           <div class="user_option">
-            <a href="">
+            <a href="login.html">
               <i class="fa fa-user" aria-hidden="true"></i>
               <span>
                 Login
               </span>
             </a>
-            <a href="">
-              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            <a  data-bs-toggle="modal" data-bs-target="#cartModal"  style="position: relative;">
+              <i class="fa fa-shopping-bag" aria-hidden="true" style="font-size: 30px;"></i>
+              <span style="border-radius: 50%; width: 20px; height: 20px; position: absolute; top: -5px; right: -5px; background-color: red; text-align: center; color: white;" id="cart-badge">0</span>
             </a>
           </div>
         </div>
@@ -162,6 +162,43 @@
   <!-- end hero area -->
 
   <!-- shop section -->
+
+  <section class="p-5" style="display: flex; flex-direction: column; justify-content: center; align-items: center;" data-aos="zoom-in" data-aos-duration="2000">
+    <h1>Best Seller</h1>
+    <div class="carousel-container">
+      <div class="carousel-product">
+          <div class="product-card" data-bs-toggle="modal" data-bs-target="#sepatu1" style="cursor: pointer;">
+              <div class="label-new">New</div>
+              <img src="images/sepatu1.png" alt="Product 1">
+              <h3>Nike</h3>
+              <p class="price">Harga IDR 300.000</p>
+          </div>
+          <div class="product-card" data-bs-toggle="modal" data-bs-target="#sepatu2" style="cursor: pointer;">
+              <div class="label-new">New</div>
+              <img src="images/sepatu2.png" alt="Product 2">
+              <h3>Decathlon</h3>
+              <p class="price">Harga IDR 200.000</p>
+          </div>
+          <div class="product-card" data-bs-toggle="modal" data-bs-target="#sepatu3" style="cursor: pointer;">
+              <div class="label-new">New</div>
+              <img src="images/sepatu3.png" alt="Product 3">
+              <h3>Zevil</h3>
+              <p class="price">Harga IDR 200.000</p>
+          </div>
+          <div class="product-card" data-bs-toggle="modal" data-bs-target="#sepatu4" style="cursor: pointer;">
+              <div class="label-new">New</div>
+              <img src="images/sepatu9.png" alt="Product 4" style="width: 200px !important;">
+              <h3>Adidas</h3>
+              <p class="price">Harga IDR 300.000</p>
+          </div>
+      </div>
+  
+      <div class="carousel-nav">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+      </div>
+  </div>
+  </section>
 
   <section class="shop_section layout_padding" id="shop">
     <div class="container">
@@ -665,9 +702,28 @@
 
 
 
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Keranjang Belanja</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cartItems" class="list-group">
+          <!-- Produk akan ditambahkan di sini -->
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary" id="buy-button">Beli</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  <div class="modal fade" id="sepatu1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item product-item" id="sepatu1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -677,7 +733,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Nike Air Max 1</h1>
+              <h1 id="productName1" class="product-name">Nike Air Max 1</h1>
             </div>
           </div>
           <div class="row">
@@ -692,7 +748,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 300.000</p>
+              <p>Harga : IDR <span class="product-harga" id="productHarga1">300.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -701,12 +757,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout1">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -716,7 +772,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Decathlon Kalenji</h1>
+              <h1 id="productName2" class="product-name">Decathlon Kalenji</h1>
             </div>
           </div>
           <div class="row">
@@ -731,7 +787,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 200.000</p>
+              <p>Harga : IDR <span class="product-harga" id="productHarga2">200.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -740,12 +796,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout2">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -755,7 +811,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Zevil RTX 2000</h1>
+              <h1 id="productName3" class="product-name">Zevil RTX 2000</h1>
             </div>
           </div>
           <div class="row">
@@ -770,7 +826,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 200.000</p>
+              <p>Harga : IDR <span class="product-harga" id="productHarga3">200.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -779,12 +835,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout3">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -794,7 +850,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Adidas Grand Court</h1>
+              <h1 id="productName4" class="product-name">Adidas Grand Court</h1>
             </div>
           </div>
           <div class="row">
@@ -809,7 +865,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 300.000</p>
+              <p>Harga : IDR <span class="product-harga" id="productHarga4">300.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -818,12 +874,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout4">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -833,7 +889,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Ortuseight Catalyst</h1>
+              <h1 id="productName5" class="product-name">Ortuseight Catalyst</h1>
             </div>
           </div>
           <div class="row">
@@ -848,7 +904,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 300.000</p>
+              <p>Harga : IDR <span class="product-harga" id="productHarga5">300.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -857,12 +913,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout5">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -872,7 +928,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Mizuno Wave</h1>
+              <h1 id="productName6" class="product-name">Mizuno Wave</h1>
             </div>
           </div>
           <div class="row">
@@ -888,7 +944,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 350.000</p>
+              <p>Harga : <span class="product-harga" id="productHarga6">IDR 350.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -897,12 +953,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout6">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -912,7 +968,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Nike Air Max 270</h1>
+              <h1 id="productName7" class="product-name">Nike Air Max 270</h1>
             </div>
           </div>
           <div class="row">
@@ -927,7 +983,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 400.000</p>
+              <p>Harga : <span class="product-harga" id="productHarga7">IDR 400.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -936,12 +992,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout7">Checkout</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="sepatu8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade product-item" id="sepatu8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -951,7 +1007,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col text-center">
-              <h1>Nike Air Toren</h1>
+              <h1 id="productName8" class="product-name">Nike Air Toren</h1>
             </div>
           </div>
           <div class="row">
@@ -966,7 +1022,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <p>Harga : IDR 350.000</p>
+              <p>Harga : <span class="product-harga" id="productHarga8">IDR 350.000</span></p>
             </div>
           </div>
           <div class="row">
@@ -975,11 +1031,16 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="return(alert('Terima Kasih Sudah Belanja di RDS'))">Beli</button>
+          <button type="button" class="btn btn-primary add-to-cart" data-bs-dismiss="modal" id="productCheckout8">Checkout</button>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+  
 </body>
 
 </html>
