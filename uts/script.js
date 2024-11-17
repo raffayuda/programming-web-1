@@ -121,7 +121,7 @@ function updateCartBadge() {
 
 
 
-
+// Carousel
 const carousel = document.querySelector(".carousel-product");
 const productCards = document.querySelectorAll(".product-card");
 const totalCards = productCards.length;
