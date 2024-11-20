@@ -117,6 +117,10 @@ function updateCartBadge() {
 
 
 
+// navbar
+// Navbar Fixed
+
+
 
 
 

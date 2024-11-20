@@ -16,7 +16,7 @@
   <title>
     RDS
   </title>
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <!-- slider stylesheet -->
@@ -37,55 +37,49 @@
 <body>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""></span>
-        </button>
+   
+    <header class="bg-transparent fixed top-0 left-0 w-full flex items-center z-10 max-h-[70px]">
+      <div class="container">
+          <div class="flex items-center justify-between relative">
+              <div class="px-4 xl:ml-24">
+                  <a href="#home" class="font-bold text-lg text-teal-800 block py-6"><img src="images/logo2.png" alt="" width="70"></a>
+              </div>
+              <div class="flex items-center px-4">
+                  <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                      <span class="hamburger-line transition-all duration-300 origin-top-left"></span>
+                      <span class="hamburger-line transition-all duration-300"></span>
+                      <span class="hamburger-line transition-all duration300 origin-bottom-left"></span>
+                  </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <img src="images/logo2.png" alt="" width="80" style="margin-right: 100px;">
-          <ul class="navbar-nav  ">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#shop">
-                Shop
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#member">
-                Member
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#author">Author</a>
-            </li>
-          </ul>
-          <div class="user_option">
-            <a href="login.html">
-              <i class="fa fa-user" aria-hidden="true"></i>
-              <span>
-                Login
-              </span>
-            </a>
-            <a  data-bs-toggle="modal" data-bs-target="#cartModal"  style="position: relative;cursor: pointer;">
-              <i class="fa fa-shopping-bag" aria-hidden="true" style="font-size: 30px;"></i>
-              <span style="border-radius: 50%; width: 20px; height: 20px; position: absolute; top: -5px; right: -5px; background-color: red; text-align: center; color: white;" id="cart-badge">0</span>
-            </a>
+                  <nav id="nav-menu" class="lg:block xl:mr-24 lg:static bg-transparent md:max-w-[1400px] shadow-none lg:rounded-none hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full ">
+                      <ul class="block lg:flex bg-slate-50 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent ">
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500" href="#home">Beranda</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500" href="#shop">Produk</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500" href="#member">Member</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500" href="#about">Tentang Kami</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500" href="#contact">Kontak</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-8 flex hover:text-teal-500" href="#author">Pengembang</a>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
           </div>
-        </div>
-      </nav>
-    </header>
+      </div>
+  </header>
+
+
+
     <!-- end header section -->
     <!-- slider section -->
 
@@ -510,7 +504,7 @@
 
 <!-- end order form -->
 
-  <!-- gift section -->
+  <!-- about section -->
 
   <section class="gift_section layout_padding-bottom" id="about">
     <div class="box ">
@@ -526,12 +520,12 @@
           <div class="col-md-7">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>
+                <h2  class="md:text-4xl text-xl">
                   Tentang <br>
                   RaffaDaySport
                 </h2>
               </div>
-              <p>
+              <p >
                 RDS adalah toko online sepatu olahraga yang berkomitmen untuk memberikan kenyamanan maksimal setiap langkah Anda.
               </p>
               <p>RDS adalah  adalah destinasi bagi para fashionista yang ingin tampil stylish sambil tetap aktif. Koleksi sepatu olahraga kami selalu mengikuti tren terkini, dengan desain yang unik dan warna-warna yang berani. Jadikan setiap langkahmu sebuah pernyataan mode!</p>
@@ -559,7 +553,7 @@
   </section>
 
 
-  <!-- end gift section -->
+  <!-- end about section -->
 
 
   <!-- contact section -->
@@ -608,7 +602,7 @@
 
   <!-- end contact section -->
 
-  <!-- client section -->
+  <!-- developer section -->
   <section class="client_section layout_padding" id="author" data-aos="zoom-in" data-aos-duration="2000">
     <div class="container">
       <div class="heading_container heading_center">
@@ -650,7 +644,7 @@
       </div>
     </div>
   </section>
-  <!-- end client section -->
+  <!-- end developer section -->
 
   <!-- info section -->
 
@@ -688,7 +682,6 @@
 
   <!-- end info section -->
 
-  <script src="modal.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -1040,6 +1033,31 @@
   <!-- Owl Carousel JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    window.onscroll = function(){
+  const header = document.querySelector('header');
+  const fixedNav = header.offsetTop;
+
+  if(window.pageYOffset > fixedNav){
+      header.classList.add('navbar-fixed')
+  }else{
+      header.classList.remove('navbar-fixed')
+  }
+}
+
+
+
+
+
+// Hamburger
+const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#nav-menu');
+
+hamburger.addEventListener('click', function(){
+  hamburger.classList.toggle('hamburger-active');
+  navMenu.classList.toggle('hidden');
+})
+  </script>
   
 </body>
 
