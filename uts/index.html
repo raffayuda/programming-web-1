@@ -75,6 +75,7 @@
                   </nav>
               </div>
           </div>
+          
       </div>
   </header>
 
@@ -83,7 +84,11 @@
     <!-- end header section -->
     <!-- slider section -->
 
-    <section class="slider_section">
+    <section class="slider_section" id="home">
+      <a class="bg-teal-800 text-white p-3 rounded" data-bs-toggle="modal" data-bs-target="#cartModal"  style="position: fixed; bottom: 20%; right: 5%;cursor: pointer; z-index: 999;">
+        <i class="fa fa-shopping-bag" aria-hidden="true" style="font-size: 30px;"></i>
+        <span style="border-radius: 50%; width: 20px; height: 20px; position: absolute; top: -5px; right: -5px; background-color: red; text-align: center; color: white;" id="cart-badge">0</span>
+      </a>
       <div class="slider_container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -157,8 +162,8 @@
 
   <!-- shop section -->
 
-  <section class="p-5" style="display: flex; flex-direction: column; justify-content: center; align-items: center;" data-aos="zoom-in" data-aos-duration="2000">
-    <h1>Best Seller</h1>
+  <section class="p-5 mb-5" style="display: flex; flex-direction: column; justify-content: center; align-items: center;" data-aos="zoom-in" data-aos-duration="2000">
+    <h1 class="text-xl font-bold lg:text-3xl mb-5">Best Seller</h1>
     <div class="carousel-container">
       <div class="carousel-product">
           <div class="product-card" data-bs-toggle="modal" data-bs-target="#sepatu1" style="cursor: pointer;">
@@ -197,7 +202,7 @@
   <section class="shop_section layout_padding" id="shop">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 class="text-xl font-bold lg:text-3xl mb-5">
           Produk Kami
         </h2>
       </div>
@@ -455,12 +460,12 @@
 
 <!-- Order Form -->
 
-<section class="my-5" id="member">
+<section class="my-5 py-20" id="member">
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class=" card" data-aos="zoom-in" data-aos-duration="2000">
         <div class="card-body p-4">
-          <h1>Daftar Member</h1>
+          <h1 class="text-xl font-bold lg:text-3xl mb-5">Daftar Member</h1>
           <form action="" class="">
             <div class="row">
               <div class="col">
@@ -506,7 +511,7 @@
 
   <!-- about section -->
 
-  <section class="gift_section layout_padding-bottom" id="about">
+  <section class="gift_section layout_padding-bottom pb-0" id="about">
     <div class="box ">
       <div class="container-fluid">
         <div class="row" data-aos="zoom-in" data-aos-duration="2000">
@@ -558,10 +563,10 @@
 
   <!-- contact section -->
 
-  <section class="contact_section pt-5" id="contact" data-aos="zoom-in" data-aos-duration="1000">
-    <div class="container px-0">
+  <section class="pt-60 lg:w-10/12 mx-auto contact_section" id="contact" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
       <div class="heading_container ">
-        <h2 class="">
+        <h2 class="text-xl font-bold lg:text-3xl">
           Contact Us
         </h2>
       </div>
@@ -571,7 +576,7 @@
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31708.715694137038!2d106.60543519185475!3d-6.573383528867966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d9ec9e7c1e2b%3A0x401576d14fed440!2sLeuwiliang%2C%20Kec.%20Leuwiliang%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1731555780741!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe class="h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31708.715694137038!2d106.60543519185475!3d-6.573383528867966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d9ec9e7c1e2b%3A0x401576d14fed440!2sLeuwiliang%2C%20Kec.%20Leuwiliang%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1731555780741!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -603,10 +608,10 @@
   <!-- end contact section -->
 
   <!-- developer section -->
-  <section class="client_section layout_padding" id="author" data-aos="zoom-in" data-aos-duration="2000">
+  <section class=" client_section layout_padding" id="author" data-aos="zoom-in" data-aos-duration="2000">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 class="text-xl font-bold lg:text-3xl pt-32">
           Developer
         </h2>
       </div>
