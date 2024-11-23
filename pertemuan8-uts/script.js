@@ -117,9 +117,22 @@ function updateCartBadge() {
 
 
 
-// navbar
-// Navbar Fixed
+  function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const errorMessage = document.getElementById("error-message");
 
+    // Data statis untuk login
+    const validEmail = "raffayudapratama20@gmail.com";
+    const validPassword = "admin123";
+
+    if (email === validEmail && password === validPassword) {
+        alert("Login berhasil!");
+        window.location.href = "index.html"; // Redirect ke index.html
+    } else {
+        alert("Username atau password salah!");
+    }
+}
 
 
 

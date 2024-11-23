@@ -54,22 +54,25 @@
                   <nav id="nav-menu" class="lg:block xl:mr-24 lg:static bg-transparent md:max-w-[1400px] shadow-none lg:rounded-none hidden absolute py-5 bg-white shadow-lg rounded-lg w-full right-4 top-full ">
                       <ul class="block lg:flex bg-slate-50 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-lg lg:rounded-none lg:shadow-none lg:bg-transparent lg:w-[800px] w-full">
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex group-hover:text-teal-500" href="#home">Beranda</a>
+                              <a class="text-base text-black py-2 mx-3 flex group-hover:text-teal-500" href="#home">Beranda</a>
                           </li>
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex group-hover:text-teal-500" href="#shop">Produk</a>
+                              <a class="text-base text-black py-2 mx-3 flex group-hover:text-teal-500" href="#shop">Produk</a>
                           </li>
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex group-hover:text-teal-500" href="#member">Member</a>
+                              <a class="text-base text-black py-2 mx-3 flex group-hover:text-teal-500" href="#member">Member</a>
                           </li>
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex group-hover:text-teal-500" href="#about">Tentang Kami</a>
+                              <a class="text-base text-black py-2 mx-3 flex group-hover:text-teal-500" href="#about">Tentang Kami</a>
                           </li>
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex group-hover:text-teal-500" href="#contact">Kontak</a>
+                              <a class="text-base text-black py-2 mx-3 flex group-hover:text-teal-500" href="#contact">Kontak</a>
                           </li>
                           <li class="group">
-                              <a class="text-base text-black py-2 mx-6 flex hover:text-teal-500" href="#author">Pengembang</a>
+                              <a class="text-base text-black py-2 mx-3 flex hover:text-teal-500" href="#author">Pengembang</a>
+                          </li>
+                          <li class="group">
+                              <a class="text-base text-black py-2 mx-3 flex hover:text-teal-500" href="#login">Login</a>
                           </li>
                       </ul>
                   </nav>
@@ -500,6 +503,34 @@
               </div>
             </div>
             <button type="reset" onclick="return(alert('Selamat anda telah menjadi member'))" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5" id="login">
+    <div class="col-md-4 pt-24 mx-auto">
+      <div class=" card" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="card-body p-4">
+          <h1 class="text-xl font-bold lg:text-3xl mb-5">Login</h1>
+          <form action="" class="">
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" placeholder="Masukkan Email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
+                </div>
+              </div>
+            </div>
+            <button type="reset" onclick="login()" class="btn btn-info">Submit</button>
           </form>
         </div>
       </div>

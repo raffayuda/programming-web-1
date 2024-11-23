@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar</title>
+    <script>
+        let a = 10
+        let b = 20
+        let c = a + b
+        console.log("Hasil dari " + a + " + " + b + " = " + c)
+
+        function jumlahkan() {
+            let a = parseFloat(document.getElementById("bil1").value)
+            let b = parseFloat(document.getElementById("bil2").value)
+            let c = a + b
+            console.log("Hasil dari " + a + " + " + b + " = " + c)
+            document.getElementById("demo").innerHTML = "Hasil dari " + a + " + " + b + " = " + c
+        }
+    </script>
+</head>
+<body>
+
+    <form>
+        Bilangan1:
+        <input type="number" id="bil1" name="bil1" value="100">
+        <br>
+        Bilangan2:
+        <input type="number" id="bil2" name="bil2" value="200">
+        <br>
+        <span>Hasil</span><input type="button" value="Tambah" onclick="jumlahkan()">
+        <h1 id="demo"></h1>
+    </form>
+    
+</body>
+</html>
