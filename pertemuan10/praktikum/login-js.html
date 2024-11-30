@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="login-form" onsubmit="login()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+        <button type="reset">Batal</button>
+    </form>
+
+    <script>
+
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let form = document.getElementById("login-form");
+
+            if (username === "admin" && password === "admin") {
+                alert("Login berhasil!");
+                form.setAttribute("action", "google.com");
+                form.submit();
+            } else {
+                alert("Username atau password salah!");
+            }
+
+            return false;
+        }
+    </script>
+</body>
+</html>
