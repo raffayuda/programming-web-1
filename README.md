@@ -7,9 +7,10 @@
 
 
 
+
 ## 📄 Available Routes
 
-*Last updated: 2024-11-25 14:20 UTC*
+*Last updated: 2024-11-30 03:44 UTC*
 
 Browse through our available pages:
 
@@ -27,6 +28,12 @@ Browse through our available pages:
 ### 📁 coba
 
 - [📍 coba](https://sttnf.github.io/pmweb/coba/index)
+
+### 📁 pertemuan10/praktikum
+
+- [📄 Chat Js](https://sttnf.github.io/pmweb/pertemuan10/praktikum/chat-js)
+- [📍 pertemuan10/praktikum](https://sttnf.github.io/pmweb/pertemuan10/praktikum/index)
+- [📄 Login Js](https://sttnf.github.io/pmweb/pertemuan10/praktikum/login-js)
 
 ### 📁 pertemuan2
 
@@ -105,6 +112,6 @@ Browse through our available pages:
 
 ---
 
-📊 **Stats**: 35 page(s) in 17 folder(s)
+📊 **Stats**: 38 page(s) in 18 folder(s)
 
 💡 *Routes are automatically updated when pages are added or removed.*
