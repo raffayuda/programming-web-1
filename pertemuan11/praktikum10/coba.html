@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mhs = [
+            {
+                nama: "Ahmad",
+                nim: "123456",
+                ipk: 3.5,
+                prodi: {
+                    kode: "TI",
+                    nama: "Teknik Informatika",
+                    kaprodi: "Tifani Nabarian"
+                },
+                statusIPK: function() {
+                    if (this.ipk >= 3.5) {
+                        return "Cumlaude";
+                    } else {
+                        return "Tidak Cumlaude";
+                    }
+                }
+            },
+            {
+                nama: "Budi",
+                nim: "789012",
+                ipk: 2.5,
+                prodi: {
+                    kode: "SI",
+                    nama: "Sistem Informasi",
+                    kaprodi: "Astrid"
+                },
+                statusIPK: function() {
+                    if (this.ipk >= 3.5) {
+                        return "Cumlaude";
+                    } else {
+                        return "Tidak Cumlaude";
+                    }
+                }
+            }
+        ];
+
+        function cetakMhs(arrMhs) {
+            let info = "";
+            arrMhs.forEach(mhs => {
+                info += "Nama: " + mhs.nama + "<br>";
+                info += "NIM: " + mhs.nim + "<br>";
+                info += "IPK: " + mhs.ipk + "<br>";
+                info += "Prodi: " + mhs.prodi.nama + "<br>";
+                info += "Kaprodi: " + mhs.prodi.kaprodi + "<br>";
+                info += "Status IPK: " + mhs.statusIPK() + "<br><br>";
+            });
+            document.getElementById("nf").innerHTML = info;
+        }
+
+        
+    </script>
+</head>
+<body onload="cetakMhs(mhs)">
+    <div id="nf">
+    </div>
+</body>
+</html>
+

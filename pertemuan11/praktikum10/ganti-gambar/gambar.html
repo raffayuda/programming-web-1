@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tampilGambar() {
+            const gambarElement = document.getElementById("gambar");
+            const pilihGambar = document.getElementById("pilihGambar").value;
+            switch (pilihGambar) {
+                case "barca":
+                    gambarElement.src = "gambar/barca.jpg";
+                    break;
+                case "city":
+                    gambarElement.src = "gambar/city.jpg";
+                    break;
+                case "roma":
+                    gambarElement.src = "gambar/roma.jpg";
+                    break;
+                case "bayern":
+                    gambarElement.src = "gambar/bayern.jpg";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Ganti Gambar</h2>
+    <label for="pilihGambar">Pilih Gambar:</label>
+    <select name="" id="pilihGambar" onchange="tampilGambar()">
+        <option value="barca">Barcelona</option>
+        <option value="city">Manchester City</option>
+        <option value="roma">As Roma</option>
+        <option value="bayern">Bayern Munich</option>
+    </select>
+    <br><br><br>
+    <img src="gambar/barca.jpg" id="gambar" alt="" width="300">
+</body>
+</html>
