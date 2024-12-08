@@ -10,9 +10,10 @@
 
 
 
+
 ## 📄 Available Routes
 
-*Last updated: 2024-11-30 03:47 UTC*
+*Last updated: 2024-12-07 04:09 UTC*
 
 Browse through our available pages:
 
@@ -36,6 +37,26 @@ Browse through our available pages:
 - [📄 Chat Js](https://sttnf.github.io/pmweb/pertemuan10/praktikum/chat-js)
 - [📍 pertemuan10/praktikum](https://sttnf.github.io/pmweb/pertemuan10/praktikum/index)
 - [📄 Login Js](https://sttnf.github.io/pmweb/pertemuan10/praktikum/login-js)
+
+### 📁 pertemuan11/praktikum10
+
+- [📄 Coba](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/coba)
+
+### 📁 pertemuan11/praktikum10/ganti-gambar
+
+- [📄 Gambar](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/ganti-gambar/gambar)
+
+### 📁 pertemuan11/praktikum10/kalkulator
+
+- [📄 Kalkulator](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/kalkulator/kalkulator)
+
+### 📁 pertemuan11/praktikum10/kurs
+
+- [📄 Kurs](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/kurs/kurs)
+
+### 📁 pertemuan11/praktikum10/login
+
+- [📄 Login](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/login/login)
 
 ### 📁 pertemuan2
 
@@ -114,6 +135,6 @@ Browse through our available pages:
 
 ---
 
-📊 **Stats**: 38 page(s) in 18 folder(s)
+📊 **Stats**: 43 page(s) in 23 folder(s)
 
 💡 *Routes are automatically updated when pages are added or removed.*
