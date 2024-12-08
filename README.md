@@ -3,22 +3,6 @@
     <li><a href="https://raffayuda.github.io/programming-web-1/pertemuan8-uts/">Link UTS</a></li>
 </ul>
 
-
-
-
-
-
-
-
-
-
-## 📄 Available Routes
-
-*Last updated: 2024-12-08 04:37 UTC*
-
-Browse through our available pages:
-
-
 ### 📁 Pertemuan3/form-pizza
 
 - [📍 Pertemuan3/form-pizza](https://sttnf.github.io/pmweb/Pertemuan3/form-pizza/index)
@@ -138,8 +122,3 @@ Browse through our available pages:
 - [📄 No2](https://sttnf.github.io/pmweb/pertemuan9/praktikum9/no2)
 - [📄 No3](https://sttnf.github.io/pmweb/pertemuan9/praktikum9/no3)
 
----
-
-📊 **Stats**: 44 page(s) in 24 folder(s)
-
-💡 *Routes are automatically updated when pages are added or removed.*
