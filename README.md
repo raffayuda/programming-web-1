@@ -11,9 +11,10 @@
 
 
 
+
 ## 📄 Available Routes
 
-*Last updated: 2024-12-07 04:09 UTC*
+*Last updated: 2024-12-08 04:37 UTC*
 
 Browse through our available pages:
 
@@ -57,6 +58,10 @@ Browse through our available pages:
 ### 📁 pertemuan11/praktikum10/login
 
 - [📄 Login](https://sttnf.github.io/pmweb/pertemuan11/praktikum10/login/login)
+
+### 📁 pertemuan11/tugas
+
+- [📄 Login Validasi](https://sttnf.github.io/pmweb/pertemuan11/tugas/login-validasi)
 
 ### 📁 pertemuan2
 
@@ -135,6 +140,6 @@ Browse through our available pages:
 
 ---
 
-📊 **Stats**: 43 page(s) in 23 folder(s)
+📊 **Stats**: 44 page(s) in 24 folder(s)
 
 💡 *Routes are automatically updated when pages are added or removed.*
