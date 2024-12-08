@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Form</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #hasil {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Pemesanan Tiket</h2>
+        <form id="ticketForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="nama">Nama Pelanggan:</label>
+                <input type="text" id="nama" name="nama">
+                <span class="error" id="namaError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="waktu">Jam Keberangkatan:</label>
+                <input type="time" id="waktu" name="waktu">
+                <span class="error" id="waktuError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="tujuan">Tujuan Keberangkatan:</label>
+                <select id="tujuan" name="tujuan">
+                    <option value="">Pilih Tujuan</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                </select>
+                <span class="error" id="tujuanError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="tiket">Jumlah Tiket:</label>
+                <input type="number" id="tiket" name="tiket" min="1" max="10">
+                <span class="error" id="tiketError"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="hasil" style="display: none;">
+            <h3>Data Pemesanan:</h3>
+            <p><strong>Nama:</strong> <span id="hasil-nama"></span></p>
+            <p><strong>Email:</strong> <span id="hasil-email"></span></p>
+            <p><strong>Jam Keberangkatan:</strong> <span id="hasil-waktu"></span></p>
+            <p><strong>Tujuan:</strong> <span id="hasil-tujuan"></span></p>
+            <p><strong>Jumlah Tiket:</strong> <span id="hasil-tiket"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            let isValid = true;
+
+            // hapus semua pesan error
+            document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+            // Validasi Nama
+            const nama = document.getElementById('nama').value.trim();
+            if (!nama) {
+                document.getElementById('namaError').textContent = 'Nama harus diisi';
+                isValid = false;
+            } else if (nama.length > 30) {
+                document.getElementById('namaError').textContent = 'Nama maksimal 30 karakter';
+                isValid = false;
+            }
+
+            // Validasi Email
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email) {
+                document.getElementById('emailError').textContent = 'Email harus diisi';
+                isValid = false;
+            } else if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Format email tidak valid';
+                isValid = false;
+            }
+
+            // Validasi Waktu
+            const waktu = document.getElementById('waktu').value;
+            if (!waktu) {
+                document.getElementById('waktuError').textContent = 'Jam keberangkatan harus diisi';
+                isValid = false;
+            }
+
+            // Validate Tujuan
+            const tujuan = document.getElementById('tujuan').value;
+            if (!tujuan) {
+                document.getElementById('tujuanError').textContent = 'Tujuan harus dipilih';
+                isValid = false;
+            }
+
+            // Validate Tiket
+            const tiket = document.getElementById('tiket').value;
+            if (!tiket) {
+                document.getElementById('tiketError').textContent = 'Jumlah tiket harus diisi';
+                isValid = false;
+            } else if (tiket < 1 || tiket > 10 || !Number.isInteger(Number(tiket))) {
+                document.getElementById('tiketError').textContent = 'Jumlah tiket harus antara 1-10';
+                isValid = false;
+            }
+
+            // If valid, display the results
+            if (isValid) {
+                document.getElementById('hasil-nama').textContent = nama;
+                document.getElementById('hasil-email').textContent = email;
+                document.getElementById('hasil-waktu').textContent = waktu;
+                document.getElementById('hasil-tujuan').textContent = tujuan;
+                document.getElementById('hasil-tiket').textContent = tiket;
+                document.getElementById('hasil').style.display = 'block';
+            }
+
+            return false;
+        }
+    </script>
+</body>
+</html>
