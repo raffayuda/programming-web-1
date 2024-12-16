@@ -125,9 +125,10 @@
 
 
 
+
 ## 📄 Available Routes
 
-*Last updated: 2024-12-08 04:45 UTC*
+*Last updated: 2024-12-16 14:13 UTC*
 
 Browse through our available pages:
 
@@ -175,6 +176,20 @@ Browse through our available pages:
 ### 📁 pertemuan11/tugas
 
 - [📄 Login Validasi](https://github.com/raffayuda/programming-web-1/pertemuan11/tugas/login-validasi)
+
+### 📁 pertemuan12/praktikum11/1734144811.layoutit/layoutit
+
+- [📄 Readme](https://github.com/raffayuda/programming-web-1/pertemuan12/praktikum11/1734144811.layoutit/layoutit/readme)
+
+### 📁 pertemuan12/praktikum11/1734144811.layoutit/layoutit/src
+
+- [📍 pertemuan12/praktikum11/1734144811.layoutit/layoutit/src](https://github.com/raffayuda/programming-web-1/pertemuan12/praktikum11/1734144811.layoutit/layoutit/src/index)
+
+### 📁 pertemuan12/praktikum11
+
+- [📄 1734144834.layoutit](https://github.com/raffayuda/programming-web-1/pertemuan12/praktikum11/1734144834.layoutit)
+- [📄 Form](https://github.com/raffayuda/programming-web-1/pertemuan12/praktikum11/form)
+- [📍 pertemuan12/praktikum11](https://github.com/raffayuda/programming-web-1/pertemuan12/praktikum11/index)
 
 ### 📁 pertemuan2
 
@@ -253,6 +268,6 @@ Browse through our available pages:
 
 ---
 
-📊 **Stats**: 44 page(s) in 24 folder(s)
+📊 **Stats**: 49 page(s) in 27 folder(s)
 
 💡 *Routes are automatically updated when pages are added or removed.*
