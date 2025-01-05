@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="bg-blue-500 h-screen w-full flex justify-center items-center">
+    <div class="max-w-sm w-full p-4 border border-gray-300 rounded-md h-fit bg-gradient-to-b via-white from-[5%] to-[100%] from-blue-500 to-gray-100">
+        <div>
+            <h1 class="text-2xl font-bold text-white text-center">Sign in to Boday <span class="text-sky-300">Express</span></h1>
+            <p class="text-white text-center my-3">Make a new doc to bring your packet, data, and teams</p>
+        </div>
+        <div class="space-y-6 border-b border-gray-300 pb-5">
+            <div class="relative">
+                <input type="text" id="floating-name" class="peer w-full px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder=" ">
+                <label for="floating-name" class="absolute left-3 top-1 text-gray-500 text-sm transition-all transform scale-100 peer-placeholder-shown:translate-y-3 peer-focus:scale-90 peer-focus:-translate-y-1 peer-focus:text-blue-500">Name</label>
+            </div>
+            <div class="relative">
+                <input type="text" id="floating-email" class="peer w-full outline-none px-3 pt-5 pb-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder=" ">
+                <label for="floating-email" class="absolute left-3 top-1 text-gray-500 text-sm transition-all transform scale-100 peer-placeholder-shown:translate-y-3 peer-focus:scale-90 peer-focus:-translate-y-1 peer-focus:text-blue-500">Email</label>
+            </div>
+
+            <div>
+                <p class="text-end"><a href="#" class="text-sky-300">Forgot Password?</a></p>
+            </div>
+
+            <button type="submit" class="w-full bg-slate-950 text-white py-2 rounded-xl hover:bg-blue-600 focus:ring-2 focus:ring-blue-500">Sign in</button>
+        </div>
+        <div>
+            <p class="text-gray-400 text-center">Or sign in with</p>
+        </div>
+        <div class="flex justify-around mt-5">
+            <div class="p-2 text-center bg-gray-300 rounded-md w-[50px] shadow-md">G</div>
+            <div class="p-2 text-center bg-gray-300 rounded-md w-[50px] shadow-md">F</div>
+            <div class="p-2 text-center bg-gray-300 rounded-md w-[50px] shadow-md">T</div>
+        </div>
+    </div>
+</body>
+</html>
